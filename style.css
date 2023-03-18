@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/* resets */
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color:white;
+    --accent-color:#e50914;
+    --accent-color-dark:#c11119;
+    --accent-color-black-dark:#4e4e4e;
+    --accent-color-black:#2d2d2d;
+    --padding-inline-section:20px;
+}
+
+body{
+    color: white;
+    font-family:"Roboto", sans-serif;
+}
+
+h1{
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+}
+
+h3{
+    color: white;
+    font-family:'Roboto', sans-serif;
+    font-size: 0.75rem;
+}
+
+p{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    padding: 72px 175px;
+}
+
+/* utility class */
+
+.flex
+{
+    display: flex;
+}
+
+.primary-button{
+    border: 0.2px solid var(--accent-color);
+    background-color: var(--accent-color);
+    border-radius: 5px;
+    padding: 5px 15px;
+    transition: 0.2s ease-out;
+    box-shadow: 0 0 2px var(--accent-color-dark);
+    font-weight: 700;
+} 
+
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+/*.secondary-button{} */
+
+/* header */
+
+/* nav-bar */
+header{
+    background:rgba(0,0,0,0.1) ;
+    height: 100vh;
+    position: relative;
+    min-height: 300px;
+    background-image: radial-gradient(circle, rgba(0,0,0,0.2),rgba(0,0,0,0.6), rgba(0,0,0,0.9)),url(img/1.jpg);
+    background-size: cover;
+
+}
+
+.nav-bar{
+    padding-top: 10px;
+    justify-content: space-between;
+}
+
+.logo-img{
+    height:75px;
+}
+
+.options-container{
+    gap: 20px;
+}
+
+.dropdown-container{
+    border: none;
+    background: rgba(0,0,0,0.1);
+    height: 30px;
+}
+
+.dropdown-box{
+    margin: auto;
+    align-items: center;
+    gap: 10px;
+    border: 0.5px solid white;
+    outline:0.5px solid white;
+    outline-offset: 2px;
+}
+
+.nav-button{
+    margin-top: 25px;
+}
+
+#language{
+    color: white;
+    font-weight: 300;
+}
+
+/* header-section */
+
+input[type="email"]{
+    text-align: start;
+    color: rgba(255, 255, 255, 0.855);
+}
+
+#email{
+    padding: 15px 200px 15px 10px;
+    background: rgba(0,0,0,0.1);
+}
+
+.buttons{
+    gap: 10px;
+}
+
+.get-started{
+    padding: 5px 20px 10px 20px;
+    font-size: 1.5rem;
+}
+
+.header-section{
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* advertisment */
+
+/* All ad */
+.ad{
+    background-color: black;
+}
+
+.ad-left-container{
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
+
+/* ad-2 and ad-4 */
+.ad-row-reverse{
+    flex-direction: row-reverse;
+}
+
+/* faq - question */
+
+.faq{
+    background-color: black;
+    margin-top: 10px;
+}
+
+.faq-header{
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.faq-question{
+    justify-content: space-between;
+}
+
+.faq-questions{
+    flex-direction: column;
+    gap: 10px;
+}
+
+.faq-button{
+   background: var(--accent-color-black);
+   padding: 20px 24px; 
+}
+
+.faq-button:hover{
+    background: var(--accent-color-black-dark);
+}
+
+.sales-pitch{
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sales-para{
+    margin-top: 50px;
+}
+
+.sales-pitch-flex{
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer */
+
+footer{
+    background-color: black;
+}
+
+.footer-container p,.font-design,.footer-end-para p{
+    font-size: 1rem;
+    color: #4e4e4e;
+}
+
+.footer-container{
+    margin-top: 10px;
+}
+
+.footer-columns{
+    align-items: start;
+    justify-content: space-between;
+}
+
+.footer-flex-design{
+    flex-direction: column;
+    gap: 10px;
+}
